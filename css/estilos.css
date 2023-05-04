@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: poppinsregular;
+    src: url(../assets/font/Poppins-Regular.ttf);
+    font-family: poppinsbold;
+    src: url(../assets/font/Poppins-Bold.ttf);
+    font-family: poppinslight;
+    src: url(../assets/font/Poppins-Light.ttf);
+}
+
+/* Todo el documento */
+body{
+    font-family: poppinsregular, sans-serif;
+    background-color: #F2F2F2;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+/* Barra de Navegación */
+header{
+    position: sticky;
+    top: 0;
+}
+
+.barra{
+    background-color: #151515;
+    padding: 30px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.barra a:hover{
+    color: #62D9B7;
+}
+
+.barra a{
+    color: #F2F2F2;
+    text-decoration: none;
+    text-decoration-color: #62D9B7;
+    font-size: 25px;
+}
+
+@media (max-width:700px){
+    .barra a{
+        font-size: 10px;
+    }
+}
+
+.barra ul{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.barra li{
+    margin-left: 20px;
+}
+
+.barra li a{
+    text-decoration: none;
+    color: #F2F2F2;
+}
+
+
+/* Presentación en el Index */
+.inicio{
+    height: 650px;
+    background: url('../assets/img/fondo-index.png');
+    background-repeat: no-repeat;
+    color: #F2F2F2;
+    font-size: 30px;
+    font-family: poppinslight;
+}
+
+.inicio h2{
+    color: #7C7C7C;
+    font-family: poppinsbold, sans-serif;
+}
+
+.inicio h3 span{
+    font-family: poppinsbold, sans-serif;
+} 
+
+/*Sobre mí*/
+@media (max-width:700px) {
+    .quien-soy{
+        font-size: 15px;
+    }
+    .presentacion{
+        font-size: 15px;
+    }
+}
+
+/* Formación */
+
+.formacion{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-gap: 20px;
+}
+
+/* Formulario página principal */
+.formulario{
+    width: 300px;
+    height: 100px;
+    padding: 10px 25px 10px 25px;
+    background-color: #7C7C7C;
+}
+
+/* imagenes de portfolio */
+.row .col img{
+    max-width: 100%;
+    height: auto;
+}
+
+.row .col video{
+    max-width: 100%;
+    height: auto;
+}
+
+/* Footer */
+footer{
+    width: auto;
+    height: 50px;
+    background-color: #151515;
+}
